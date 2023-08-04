@@ -11,8 +11,8 @@
         "compile:grammar": "pegjs -o src/parser/parser.js src/parser/grammar.pegjs",
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "test": "jest",
-        "prepublishOnly": "yarn compile:grammar && yarn build && yarn lint && yarn test",
-        "prepack": "yarn prepublishOnly"
+        "prepublishOnly": "npm run compile:grammar && npm run build && npm run lint && npm test",
+        "prepack": "npm run prepublishOnly"
     },
     "repository": {
         "type": "git",
