@@ -16,5 +16,6 @@ export const options: Record<keyof PluginOptions, SupportOption> = {
         default: 0,
         description: 'Insert empty lines between matcher blocks',
         category: 'firestore-rules',
+        since: '',
     }
 };
